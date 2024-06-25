@@ -28,7 +28,7 @@ SHELL=/bin/bash
 include $(REPOROOT)/.make.versions
 
 # Command to run python 
-PYTHON?=python
+PYTHON?=python3
 PIP=$(PYTHON) -m pip
 # Command to run pytest
 PYTEST=pytest -s

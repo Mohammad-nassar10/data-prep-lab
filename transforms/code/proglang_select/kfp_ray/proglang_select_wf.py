@@ -24,7 +24,7 @@ EXEC_SCRIPT_NAME: str = "proglang_select_transform_ray.py"
 task_image = "quay.io/dataprep1/data-prep-kit/proglang_select-ray:0.2.0.dev6"
 
 # components
-base_kfp_image = "quay.io/dataprep1/data-prep-kit/kfp-data-processing:0.2.1.dev0"
+base_kfp_image = "quay.io/dataprep1/data-prep-kit/kfp-data-processing:0.2.1"
 
 # path to kfp component specifications files
 component_spec_path = "../../../../kfp/kfp_ray_components/"
