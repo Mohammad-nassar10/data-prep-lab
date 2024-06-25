@@ -21,7 +21,7 @@ from workflow_support.compile_utils import ONE_HOUR_SEC, ONE_WEEK_SEC, Component
 EXEC_SCRIPT_NAME: str = "code_quality_transform_ray.py"
 PREFIX: str = ""
 
-task_image = "quay.io/dataprep1/data-prep-kit/code_quality-ray:test0.2.2.dev0"
+task_image = "quay.io/dataprep1/data-prep-kit/code_quality-ray:test0.2.2.dev7"
 
 # components
 base_kfp_image = "quay.io/dataprep1/data-prep-kit/kfp-data-processing:test0.2.0.dev7"

@@ -30,8 +30,8 @@ else
 fi
 
 # Make sure we're starting from the base branch
-get fetch
-git checkout $DEFAULT_BRANCH 
+git fetch
+git checkout $DEFAULT_BRANCH
 
 # Get the currently defined version w/o any suffix.  This is the next release version
 version=$(make DPK_VERSION_SUFFIX= show-version)
