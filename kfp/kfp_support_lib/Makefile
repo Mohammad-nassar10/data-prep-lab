@@ -44,8 +44,8 @@ test::
 	@$(MAKE) RULE=$@ .recurse
 
 publish::
-	@# Help: Recursively $@ in all subdirs
-	@$(MAKE) RULE=$@ .recurse
+	# @# Help: Recursively $@ in all subdirs
+	# @$(MAKE) RULE=$@ .recurse
 
 image::
 	@# Help: Recursively $@ in all subdirs

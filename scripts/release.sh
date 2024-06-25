@@ -1,3 +1,5 @@
+set -x
+
 debug=echo
 dbg_suffix=.dev7
 # Assume this file is in the reporoot/scripts directory
@@ -12,14 +14,14 @@ elif [ -z "$DPK_DOCKER_REGISTRY_KEY" ]; then
     echo DPK_DOCKER_REGISTRY_KEY env var must be set
     exit 1
 fi
-if [ ! -e ~/.pypirc ]; then
-   cat << EOF
-You need a ~/.pypirc containing pypi.org credentials.
-See https://packaging.python.org/en/latest/specifications/pypirc/ for details.
-EOF
-    exit
-fi
-exit
+# if [ ! -e ~/.pypirc ]; then
+#    cat << EOF
+# You need a ~/.pypirc containing pypi.org credentials.
+# See https://packaging.python.org/en/latest/specifications/pypirc/ for details.
+# EOF
+#     exit
+# fi
+# exit
 
 if [ -z "$debug" ]; then
     DEFAULT_BRANCH=dev
