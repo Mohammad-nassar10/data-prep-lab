@@ -1,6 +1,6 @@
 set -x
 
-debug=echo
+# debug=echo
 dbg_suffix=.dev7
 # Assume this file is in the reporoot/scripts directory
 reporoot=$(dirname $0)/..
